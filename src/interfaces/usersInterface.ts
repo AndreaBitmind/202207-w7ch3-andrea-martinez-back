@@ -3,6 +3,11 @@ export interface LoginData {
   userName: string;
   password: string;
 }
+
+export interface JwtPayload {
+  id: string;
+  userName: string;
+}
 export interface UserData {
   userName: string;
   urlImage?: string;
