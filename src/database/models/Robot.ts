@@ -13,6 +13,10 @@ const robotSchema = new Schema({
     type: Date,
     default: new Date(),
   },
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: "user",
+  },
 });
 
 const Robot = model("Robot", robotSchema, "robots");
